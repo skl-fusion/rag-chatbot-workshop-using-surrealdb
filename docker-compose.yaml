@@ -1,0 +1,21 @@
+version: '3'
+
+services:
+  surrealdb:
+    image: surrealdb/surrealdb:latest
+    mem_limit: 256m
+    entrypoint:
+      - /surreal
+      - start
+      - --auth
+      - --log
+      - trace
+      - --user
+      - $DB_USER
+      - --pass
+      - $DB_PASSWORD
+      - memory # This starts SurrealDB in memory mode. Remove "memory" for persistent storage.
+    ports:
+      - "8000:8000"
+    env_file:
+      - .env
