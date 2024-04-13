@@ -30,7 +30,7 @@ pip install -r requirements.txt
 ```
 
 ### Step 4: Upload Initial Data
-We will use a "small dataset," such as the entire works of Shakespeare (only 5.33 MB), which can be found [here](https://raw.githubusercontent.com/borkabrak/markov/master/Complete-Works-of-William-Shakespeare.txt). There's no need to download it manually, simply execute `python upload-documents.py` to populate your SurrealDB instance with data. This script uploads the complete works of Shakespeare along with their embedding.
+We will use a "small dataset," such as the entire works of Shakespeare (only 5.33 MB), which can be found [here](https://raw.githubusercontent.com/borkabrak/markov/master/Complete-Works-of-William-Shakespeare.txt). There's no need to download it manually, simply execute `python upload_documents.py` to populate your SurrealDB instance with data. This script uploads the complete works of Shakespeare along with their embedding.
 
 ### Step 5: Start the Chatbot
 Run `python chatbot.py` to initiate the chatbot. This script allows the chatbot to begin handling and responding to queries using the data stored in SurrealDB.
